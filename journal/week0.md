@@ -9,4 +9,5 @@
 - Created Conceptual and Logical diagrams for Crudder
 
 !.[Conceptual Diagrams].(asset/Crudder%20-%20Conceptual%20Design.png)
-!.[Conceptual Diagrams].(asset/Crudder%20-%20Logical%20Diagram.png)
+
+!.[Conceptual Diagrams].(/blob/main/asset/Crudder%20-%20Logical%20Diagram.png)
