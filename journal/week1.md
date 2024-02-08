@@ -18,7 +18,6 @@ Create Dockerfile for Crudder [Backend]
 
 ### Create Dockerfile for Crudder [Backend]
 
-```dockerfile
 'FROM python:3.10-slim-buster
 
 WORKDIR /backend-flask
