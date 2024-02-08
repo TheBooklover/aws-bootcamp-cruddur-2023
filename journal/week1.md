@@ -47,25 +47,25 @@ If you run it in your localhost with your requirement txt, you need every instru
     - Within the merged layer, you wouldn't see this file.
     - Everything builds on top and your view is looking downward.
 
-`WORKDIR /backend-flask` signals where this is going to work from when the container starts.
+`WORKDIR /backend-flask` = signals where this is going to work from when the container starts.
 
-`COPY requirements.txt requirements.txt` takes something from OUTSIDE the Container and copies INSIDE the container.
+`COPY requirements.txt requirements.txt` =  takes something from OUTSIDE the Container and copies INSIDE the container.
 
-`RUN pip3 install -r requirements.txt` is an action INSIDE the container. It runs `pip3 install` from the root (-r) file `requirements.txt`.
+`RUN pip3 install -r requirements.txt` =  is an action INSIDE the container. It runs `pip3 install` from the root (-r) file `requirements.txt`.
 
-`COPY . .` copies everything in the current directory (/backend-flask) to the container directory (also called /backend-flask).
+`COPY . .` =  copies everything in the current directory (/backend-flask) to the container directory (also called /backend-flask).
 
-`ENV FLASK_ENV=development` sets the environment Variables (Env Vars). It sits inside the container and remains set when the container is running.
+`ENV FLASK_ENV=development` = sets the environment Variables (Env Vars). It sits inside the container and remains set when the container is running.
 
-`CMD ["python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]` is the CMD Command.
+`CMD ["python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]` = is the CMD Command.
 
-    In the context of Flask, `python3 -m flask run` is considered a shortcut because you don't need to explicitly write a script to execute your Flask application.
+    - In the context of Flask,  python3 -m flask run` is considered a shortcut because you don't need to explicitly write a script to execute your Flask application.
 
-    It's a concise way to run a Flask app without having a separate entry point script.
+    - It's a concise way to run a Flask app without having a separate entry point script.
 
-    `-host=0.0.0.0` binds the Flask application to all network interfaces, making it accessible from any IP address.
+    - `-host=0.0.0.0` binds the Flask application to all network interfaces, making it accessible from any IP address.
     
-    `--port=4567` sets the Flask development server to listen on port 4567.
+    - `--port=4567` sets the Flask development server to listen on port 4567.
 
 ### Build Dockerfile
 
