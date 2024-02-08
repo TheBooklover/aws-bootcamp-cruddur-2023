@@ -37,7 +37,7 @@ Each line contains instructions on how to run your application.
 
 If you run it in your localhost with your requirement txt, you need every instruction in this recipe.
 
-`FROM python:3.10-slim-buster` is a supported docker file.
+`FROM python:3.10-slim-buster` is a supported docker file.'
 
 - `3.10-slim-buster`: It loads another docker file.
 - Each command in a docker file will essentially create a layer.
