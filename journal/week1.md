@@ -19,7 +19,7 @@ Create Dockerfile for Crudder [Backend]
 ### Create Dockerfile for Crudder [Backend]
 
 ```dockerfile
-FROM python:3.10-slim-buster
+'FROM python:3.10-slim-buster
 
 WORKDIR /backend-flask
 
@@ -31,7 +31,7 @@ COPY . .
 ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]'
 
 Each line contains instructions on how to run your application.
 
