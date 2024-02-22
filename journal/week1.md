@@ -90,4 +90,9 @@ ENV PORT=3000
 COPY . /frontend-react-js
 WORKDIR /frontend-react-js
 RUN npm install
+
+Connected the Notifications backend and Front End
+
+- As it mirrored much of the same behavior as the Home page, we copied much of the code and made minor adjustments so that it fit for notifications
+
 EXPOSE ${PORT}
